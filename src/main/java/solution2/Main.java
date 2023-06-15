@@ -9,5 +9,7 @@ public class Main {
         ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
         Question q = (Question) context.getBean("question");
         q.printAnswerList();
+        q.printAnswerSet();
+        q.printAnswerMap();
     }
 }

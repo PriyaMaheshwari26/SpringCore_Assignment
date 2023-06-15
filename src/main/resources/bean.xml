@@ -36,6 +36,20 @@
                 <value>Spring is a lightweight framework.</value>
             </list>
         </property>
+        <property name="answerSet">
+            <set>
+                <value>The Spring Framework is an open-source framework for building enterprise Java applications</value>
+                <value>Spring is a lightweight framework.</value>
+            </set>
+        </property>
+        <property name="answerMap">
+            <map>
+                <entry key="1" value="The Spring Framework is an open-source framework for building enterprise Java applications"/>
+                <entry key="2" value="Spring is a lightweight framework"/>
+            </map>
+        </property>
+
+
     </bean>
 
 </beans>

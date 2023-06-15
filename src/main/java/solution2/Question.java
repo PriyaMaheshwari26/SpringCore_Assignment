@@ -22,12 +22,7 @@ public class Question {
    private Set<String> answerSet;
    private Map<Integer,String> answerMap;
 
-   public void printAnswerList(){
-      System.out.println(questionId+" "+question);
-      for (String s:answerList) {
-         System.out.println(s);
-      }
-   }
+
 
    public String getQuestionId() {
       return questionId;
@@ -69,6 +64,13 @@ public class Question {
       this.answerMap = answerMap;
    }
 
+   public void printAnswerList(){
+      System.out.println(questionId+" "+question);
+      System.out.println("Answer: ");
+      for (String s:answerList) {
+         System.out.println(s);
+      }
+   }
    public void printAnswerSet(){
       System.out.println(questionId+": "+question);
       System.out.println("Answer: ");
@@ -78,6 +80,7 @@ public class Question {
    }
    public void printAnswerMap(){
       System.out.println(questionId+" "+question);
+      System.out.println("Answer: ");
       for (String s:answerMap.values()) {
          System.out.println(s);
       }
