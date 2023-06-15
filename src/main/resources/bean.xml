@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--    <bean id="triangle" class="springExample.setterAndConstructorInjection.Triangle">-->
+    <!--        <property name="type" value="Equilateral"/>-->
+    <!--        <property name="side" value="5"/>-->
+    <!--    </bean>-->
+    <bean id="address" class="solution1.Address">
+        <property name="street" value="JASA"/>
+        <property name="state" value="Sirasoul"/>
+        <property name="zip" value="243633"/>
+        <property name="country" value="India"/>
+    </bean>
+
+    <bean id="collection" class="solution10.AppAware">
+        <property name="list">
+            <list>
+                <value>John</value>
+                <value>Nick</value>
+                <value>Thomas</value>
+                <value>Bob</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="question" class="solution2.Question">
+        <property name="questionId" value="Q1"/>
+        <property name="question" value="What is Spring Core?"/>
+        <property name="answerList">
+            <list>
+                <value>The Spring Framework is an open-source framework for building enterprise Java applications</value>
+                <value>Spring is a lightweight framework.</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
